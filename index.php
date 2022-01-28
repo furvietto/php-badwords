@@ -1,7 +1,9 @@
 <?php
-$lorem = ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sequi quasi officiis voluptatibus excepturi possimus. Dolorum unde in dolores, molestiae nihil laborum corporis illum praesentium rerum voluptates dignissimos esse accusamus.';
+$lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure atque id laborum ipsa ut. Accusamus excepturi dicta praesentium culpa nam modi autem consectetur sed. Soluta corrupti placeat eaque dignissimos incidunt?';
+$length = strlen($lorem);
 $text = $_GET["text"];
 $change = str_replace($text,'***', $lorem);
+$changeLength = strlen($change);
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +15,21 @@ $change = str_replace($text,'***', $lorem);
     <title>Document</title>
 </head>
 <body>
-    <h1><?php echo $lorem?></h1>
-    <h2><?php echo $change?></h2>
+    <h1>Testo originale</h1>
+    <div>
+        <?php echo $lorem?>
+    </div>
+    <h1>lunghezza testo originale</h1>
+    <div>
+    <?php echo $length?>
+    </div>
+    <h2>Testo modificato</h2>
+    <div>
+        <?php echo $change?>
+    </div>
+    <h2>lunghezza testo modificato</h2>
+    <div>
+        <?php echo $changeLength?>
+    </div>  
 </body>
 </html>
