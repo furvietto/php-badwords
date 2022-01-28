@@ -15,6 +15,7 @@ $changeLength = strlen($change);
     <title>Document</title>
 </head>
 <body>
+    <!-- testo originale -->
     <h1>Testo originale</h1>
     <div>
         <?php echo $lorem?>
@@ -23,6 +24,9 @@ $changeLength = strlen($change);
     <div>
     <?php echo $length?>
     </div>
+    <!-- /testo originale -->
+
+    <!-- testo modificato -->
     <h2>Testo modificato</h2>
     <div>
         <?php echo $change?>
@@ -31,5 +35,6 @@ $changeLength = strlen($change);
     <div>
         <?php echo $changeLength?>
     </div>  
+    <!-- /testo modificato -->
 </body>
 </html>
